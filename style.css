@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: #fff;
+    text-align: center;
+    transition: background 1s ease;
+  }
+  
+  .container {
+    padding-top: 100px;
+  }
+  
+  .buttons {
+    margin: 20px;
+  }
+  
+  .mood-btn {
+    margin: 10px;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    transition: transform 0.3s, background 0.5s;
+  }
+  
+  .mood-btn:hover {
+    transform: scale(1.1);
+  }
+  
+  #calm {
+    background: linear-gradient(to right, #89f7fe, #66a6ff);
+  }
+  
+  #energetic {
+    background: linear-gradient(to right, #f7971e, #ffd200);
+  }
+  
+  #focused {
+    background: linear-gradient(to right, #1d2b64, #f8cdda);
+  }
+  
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  #display-quote {
+    font-size: 24px;
+    margin-top: 30px;
+    animation: popUp 1s ease-out;
+  }
+  
+  @keyframes popUp {
+    0% { transform: scale(0.8); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  
